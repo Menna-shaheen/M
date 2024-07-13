@@ -1,0 +1,87 @@
+.font{
+    font-family: "EB Garamond", serif;
+}
+body{
+    overflow: hidden;
+}
+.logo {
+    width: 40px;
+}
+ul{
+    list-style: none;
+}
+ul li:hover {
+    color: #c9bb00;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #c9bb00;
+    cursor: pointer;
+}
+
+.footer span:hover {
+    color: #c9bb00;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: #c9bb00;
+    box-shadow: 0 0 0 .25rem #c9bc008c;
+}
+
+.meal-layer {
+    width: 100%;
+    height: 100%;
+    background-color: #a09c9cca;
+    top: 100%;
+    transition: 0.6s;
+}
+
+.meal:hover .meal-layer {
+    top: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.alert {
+    width: fit-content;
+}
+
+.loading-screen {
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+}
+
+.loader {
+    width: 80px;
+    --b: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #cfe221) content-box;
+    -webkit-mask:
+        repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+        radial-gradient(farthest-side, #0000 calc(100% - var(--b) - 1px), #000 calc(100% - var(--b)));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: l4 1s infinite steps(10);
+}
+
+@keyframes l4 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.side-nav-menu {
+    z-index: 9999;
+}
